@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workers",
+  "info": {
+    "singularName": "worker",
+    "pluralName": "workers",
+    "displayName": "Workers",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": false
+    },
+    "employee": {
+      "type": "boolean",
+      "required": true
+    },
+    "profession": {
+      "type": "enumeration",
+      "enum": [
+        "IT",
+        "Sales",
+        "Manager",
+        "Leader",
+        "Other"
+      ],
+      "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
